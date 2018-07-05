@@ -11,6 +11,8 @@ from sklearn.preprocessing import label_binarize
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
+from sklearn.svm import SVR
+
 
 europe = ('Austria', 'Belgium', 'Amsterdam', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Hungary', 'Iceland', 'Ireland', 
           'Italy', 'Lithuania', 'Netherlands', 'Poland', 'Portugal', 'Scotland', 'Spain', 'Sweden', 'Switzerland', 'U.K.', 'Wales')
@@ -31,6 +33,11 @@ other = ('A', 'Dom. Rep., Madagascar', 'Dominican Rep., Bali', 'Ecuador, Mad., P
          'Venez,Africa,Brasil,Peru,Mex', 'Venezuela, Java', 'Venezuela/ Ghana', 'Nacional (Arriba)',  'Nacional')
 
 country = europe + america + africa + asia + australia + other
+
+bean_blended = ('Blend', 'Amazon, ICS', 'Blend-Forastero,Criollo', 'Criollo, Forastero', 'Criollo, Trinitario', 'Forastero, Trinitario',
+                'Trinitario, Criollo', 'Trinitario, Forastero', 'Trinitario, Nacional', 'Trinitario, TCGA')
+
+
 
 def normalize_column(data):        
     floateddata = data.astype(float)
@@ -67,27 +74,39 @@ def preprocess_dataset(dataset):
     dataset.loc[dataset['Broad Bean Origin'].isin(australia), 'Broad Bean Origin'] = 'Australia'
     dataset.loc[dataset['Broad Bean Origin'].isin(other), 'Broad Bean Origin'] = 'Other'
     
+
+    dataset.loc[dataset['Bean Type'].isin(bean_blended), 'Bean Type'] = 'Blend'
+    dataset.loc[dataset['Bean Type'].str.startswith('Amazon'), 'Bean Type'] = 'Amazon'
+    dataset.loc[dataset['Bean Type'].str.startswith('Criollo'), 'Bean Type'] = 'Criollo'
+    dataset.loc[dataset['Bean Type'].str.startswith('Forastero'), 'Bean Type'] = 'Forastero'
+    dataset.loc[dataset['Bean Type'].str.startswith('Trinitario'), 'Bean Type'] = 'Trinitario'
+    dataset.loc[dataset['Bean Type'].str.startswith('Nacional'), 'Bean Type'] = 'Nacional'
    
     dataset=pd.get_dummies(dataset, columns=['Company Location'])
     dataset=pd.get_dummies(dataset, columns=['Broad Bean Origin'])    
-    #dataset=pd.get_dummies(dataset, columns=['Bean Type']) 
+    dataset=pd.get_dummies(dataset, columns=['Bean Type']) 
     
     return dataset, Y
     
 
 # Loading the data
 full_data = pd.read_csv('chocolate-bar-ratings/flavors_of_cacao_.csv')
+full_data = full_data[full_data['Bean Type'].str.strip()!='A']
+
+full_data.groupby(['Bean Type'])['Rating'].mean()
+
 full_data, Y = preprocess_dataset(full_data)
+
 trainset, testset = train_test_split(full_data, test_size=0.2)
 Y_train, Y_test = train_test_split(Y.to_frame(name=None), test_size=0.2)
 #type (full_data['Company Location'][0])
 #type(trainset)
 trainset.columns
+
 neigh = KNeighborsRegressor(n_neighbors=5)
 
 neigh.fit(trainset, Y_train) 
 neigh.predict(testset)
-
 
 predicted = neigh.predict(testset)
 type(predicted)
@@ -98,4 +117,20 @@ actual_train = Y_train.as_matrix(columns=None)
 predicted_train = neigh.predict(trainset)
 
 
-r2_score(actual_train, predicted_train)
+r2_score(actual, predicted)
+
+np.mean(np.absolute(actual - predicted))
+
+
+''' SVR PART START '''
+
+
+svr_model = SVR(kernel='poly', C=1e3, degree=2)
+svr_model.fit(trainset, Y_train) 
+svr_model.predict(testset)
+
+svr_predicted = svr_model.predict(testset)
+svr_actual = Y_test.as_matrix(columns=None)
+
+np.mean(np.absolute(svr_actual - svr_predicted))
+r2_score(svr_actual, svr_predicted)
