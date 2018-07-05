@@ -9,6 +9,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import label_binarize
 from sklearn.neighbors import KNeighborsRegressor
+from sklearn.metrics import r2_score
+from sklearn.metrics import mean_squared_error
 
 europe = ('Austria', 'Belgium', 'Amsterdam', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Hungary', 'Iceland', 'Ireland', 
           'Italy', 'Lithuania', 'Netherlands', 'Poland', 'Portugal', 'Scotland', 'Spain', 'Sweden', 'Switzerland', 'U.K.', 'Wales')
@@ -43,7 +45,7 @@ def binarize_column(data):
 def preprocess_dataset(dataset): 
     Y = normalize_column(dataset['Rating'])
     
-    dataset = dataset.drop( ['Specific Bean Origin or Bar Name', 'Rating', 'Company'], axis = 1)
+    dataset = dataset.drop( ['Specific Bean Origin or Bar Name', 'Rating', 'Company', 'Bean Type'], axis = 1)
     dataset['Cocoa Percent'] = dataset['Cocoa Percent'].map(lambda x: str(x)[:-1])
     
     dataset['Cocoa Percent'] = normalize_column(dataset['Cocoa Percent'])
@@ -68,7 +70,7 @@ def preprocess_dataset(dataset):
    
     dataset=pd.get_dummies(dataset, columns=['Company Location'])
     dataset=pd.get_dummies(dataset, columns=['Broad Bean Origin'])    
-    dataset=pd.get_dummies(dataset, columns=['Bean Type']) 
+    #dataset=pd.get_dummies(dataset, columns=['Bean Type']) 
     
     return dataset, Y
     
@@ -91,3 +93,9 @@ predicted = neigh.predict(testset)
 type(predicted)
 actual = Y_test.as_matrix(columns=None)
 (actual - predicted).mean()
+
+actual_train = Y_train.as_matrix(columns=None)
+predicted_train = neigh.predict(trainset)
+
+
+r2_score(actual_train, predicted_train)
