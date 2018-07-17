@@ -1,0 +1,387 @@
+index,title,authors,groups,keywords,topics,abstract
+0,Kernelized Bayesian Transfer Learning,Mehmet Gönen and Adam A. Margolin,Novel Machine Learning Algorithms (NMLA),"cross-domain learning
+domain adaptation
+kernel methods
+transfer learning
+variational approximation","APP: Biomedical / Bioinformatics
+NMLA: Bayesian Learning
+NMLA: Kernel Methods
+NMLA: Transfer, Adaptation, Multitask Learning
+VIS: Object Recognition","Transfer learning considers related but distinct tasks defined on heterogenous domains and tries to transfer knowledge between these tasks to improve generalization performance. It is particularly useful when we do not have sufficient amount of labeled training data in some tasks, which may be very costly, laborious, or even infeasible to obtain. Instead, learning the tasks jointly enables us to effectively increase the amount of labeled training data. In this paper, we formulate a kernelized Bayesian transfer learning framework that is a principled combination of kernel-based dimensionality reduction models with task-specific projection matrices to find a shared subspace and a coupled classification model for all of the tasks in this subspace. Our two main contributions are: (i) two novel probabilistic models for binary and multiclass classification, and (ii) very efficient variational approximation procedures for these models. We illustrate the generalization performance of our algorithms on two different applications. In computer vision experiments, our method outperforms the state-of-the-art algorithms on nine out of 12 benchmark supervised domain adaptation experiments defined on two object recognition data sets. In cancer biology experiments, we use our algorithm to predict mutation status of important cancer genes from gene expression profiles using two distinct cancer populations, namely, patient-derived primary tumor data and in-vitro-derived cancer cell line data. We show that we can increase our generalization performance on primary tumors using cell lines as an auxiliary data source."
+1,"""Source Free"" Transfer Learning for Text Classification","Zhongqi Lu, Yin Zhu, Sinno Pan, Evan Xiang, Yujing Wang and Qiang Yang","AI and the Web (AIW)
+Novel Machine Learning Algorithms (NMLA)","Transfer Learning
+Auxiliary Data Retrieval
+Text Classification","AIW: Knowledge acquisition from the web
+AIW: Machine learning and the web
+NMLA: Transfer, Adaptation, Multitask Learning","Transfer learning uses relevant auxiliary data to help the learning task in a target domain where labeled data are usually insufficient to train an accurate model. Given appropriate auxiliary data, researchers have proposed many transfer learning models. How to find such auxiliary data, however, is of little research in the past. In this paper, we focus on this auxiliary data retrieval problem, and propose a transfer learning framework that effectively selects helpful auxiliary data from an open knowledge space (e.g. the World Wide Web). Because there is no need of manually selecting auxiliary data for different target domain tasks, we call our framework Source Free Transfer Learning (SFTL). For each target domain task, SFTL framework iteratively queries for the helpful auxiliary data based on the learned model and then updates the model using the retrieved auxiliary data. We highlight the automatic constructions of queries and the robustness of the SFTL framework. Our experiments on the 20 NewsGroup dataset and the Google search snippets dataset suggest that the new framework is capable to have the comparable performance to those state-of-the-art methods with dedicated selections of auxiliary data."
+2,A Generalization of Probabilistic Serial to Randomized Social Choice,Haris Aziz and Paul Stursberg,Game Theory and Economic Paradigms (GTEP),"social choice theory
+voting
+fair division
+social decision schemes","GTEP: Game Theory
+GTEP: Social Choice / Voting","The probabilistic serial (PS) rule is one of the most well-established and desirable rules for the random assignment problem. We present the egalitarian simultaneous reservation (ESR) social decision scheme — an extension of PS to the more general setting of randomized social choice. ESR also generalizes an egalitarian rule from the literature which is defined only for dichotomous preferences. We consider various desirable fairness, efficiency, and strategic properties of ESR and show that it compares favourably against other social decision schemes. Finally, we define a more general class of social decision schemes called Simultaneous Reservation (SR), that contains ESR as well as the serial dictatorship rules. We show that outcomes of SR characterize efficiency with respect to a natural refinement of stochastic dominance."
+3,Lifetime Lexical Variation in Social Media,"Liao Lizi, Jing Jiang, Ying Ding, Heyan Huang and Ee-Peng Lim",NLP and Text Mining (NLPTM),"Generative model
+Social Networks
+Age Prediction","AIW: Web personalization and user modeling
+NLPTM: Information Extraction
+NLPTM: Natural Language Processing (General/Other)","As the rapid growth of online social media attracts a large number of Internet users, the large volume of content generated by these users also provides us with an opportunity to study the lexical variations of people of different age. In this paper, we present a latent variable model that jointly models the lexical content of tweets and Twitter users' age. Our model inherently assumes that a topic has not only a word distribution but also an age distribution. We propose a Gibbs-EM algorithm to perform inference on our model. Empirical evaluation shows that our model can generate meaningful age-specific topics such as ""school"" for teenagers and ""health"" for older people. Our model also performs age prediction better than a number of baseline methods."
+4,Hybrid Singular Value Thresholding for Tensor Completion,"Xiaoqin Zhang, Zhengyuan Zhou, Di Wang and Yi Ma","Knowledge Representation and Reasoning (KRR)
+Machine Learning Applications (MLA)
+Novel Machine Learning Algorithms (NMLA)
+Vision (VIS)","tensor completion
+low-rank recovery
+hybrid singular value thresholding","KRR: Knowledge Representation (General/Other)
+MLA: Machine Learning Applications (General/other)
+NMLA: Data Mining and Knowledge Discovery
+NMLA: Dimension Reduction/Feature Selection
+VIS: Statistical Methods and Learning","In this paper, we study the low-rank tensor completion problem, where a high-order tensor with missing entries is given and the goal is to complete the tensor. We propose to minimize a new convex objective function, based on log sum of exponentials of nuclear norms, that promotes the low-rankness of unfolding matrices of the completed tensor. We show for the first time that the proximal operator to this objective function is readily computable through a hybrid singular value thresholding scheme. This leads to a new solution to high-order (low-rank) tensor completion via convex relaxation. We show that this convex relaxation and the resulting solution are much more effective than existing tensor completion methods
+(including those also based on minimizing ranks of unfolding matrices). The hybrid singular value thresholding scheme can be applied to any problem where the goal is
+to minimize the maximum rank of a set of low-rank matrices."
+5,Locality Preserving Hashing,"Kang Zhao, Hongtao Lu and Jincheng Mei",Vision (VIS),"Similarity Search
+Approximate Nearest Neighbor Search
+Binary Codes
+Locality Preserving Hashing",VIS: Image and Video Retrieval,"Hashing has recently attracted considerable attention for large scale similarity search. However, learning compact codes with good performance is still a challenge. In many cases, the real-world data lies on a low-dimensional manifold embedded in high-dimensional ambient space. To capture meaningful neighbors, a compact hashing representation should uncover the intrinsic geometric structure of the manifold, e.g., the neighborhood relationships between subregions. Most existing hashing methods only consider this issue during mapping data points into certain projected dimensions. When getting the binary codes, they either directly quantize the projected values with a threshold, or use an orthogonal matrix to refine the initial projection matrix, which both consider projection and quantization separately, and it will not well preserve the locality structure in the whole learning process. In this paper, we propose a novel hashing algorithm called Locality Preserving Hashing to effectively solve the above problems. Specifically, we learn a set of locality preserving projections with a joint optimization framework, which minimizes the average projection distance and quantization loss simultaneously. Experimental comparisons with other state-of-the-art methods on two large scale databases demonstrate the effectiveness and efficiency of our method."
+6,Discovering Better AAAI Keywords via Clustering with Crowd-sourced Constraints,"Kelly Moran, Byron Wallace and Carla Brodley",Machine Learning Applications (MLA),"constraint-based clustering
+machine learning
+crowdsourcing",MLA: Applications of Unsupervised Learning,"Selecting good conference keywords is important because they often determine the composition of review committees and hence which papers are reviewed by whom. But presently conference keywords are generated in an ad-hoc manner by a small set of conference organizers. This approach is plainly not ideal. There is no guarantee, for example, that the generated keyword set aligns with what the community is actually working on and submitting to the conference in a given year. This is especially true in fast moving fields such as AI. The problem is exacerbated by the tendency of organizers to draw heavily on preceding years' keyword lists when generating a new set. Rather than a select few ordaining a keyword set that that represents AI at large, it would be preferable to generate these keywords more directly from the data, with input from research community members. To this end, we solicited feedback from seven AAAI PC members regarding a previously existing keyword set and used these 'crowd-sourced constraints' to inform a clustering over the abstracts of all submissions to AAAI 2013. We show that the keywords discovered via this data-driven, human-in-the-loop method are at least as preferred (by AAAI PC members) as 2013's manually generated set, and that they include categories previously overlooked by organizers. Many of the discovered terms were used for this year's conference."
+7,Online Classification Using a Voted RDA Method,"Tianbing Xu, Jianfeng Gao, Lin Xiao and Amelia Regan","Machine Learning Applications (MLA)
+NLP and Machine Learning (NLPML)
+Novel Machine Learning Algorithms (NMLA)","Online Classification
+Voted Dual Averaging Method
+Natural Language Processing
+Parsing Reranking
+Sparse Regularization","MLA: Machine Learning Applications (General/other)
+NLPML: Natural Language Processing (General/Other)
+NMLA: Big Data / Scalability
+NMLA: Classification
+NMLA: Online Learning","We propose a voted dual averaging method for online
+classification problems with explicit regularization.
+This method employs the update rule of the regularized
+dual averaging (RDA) method proposed by Xiao, but
+only on the subsequence of training examples where a
+classification error is made. We derive a bound on the
+number of mistakes made by this method on the training
+set, as well as its generalization error rate.We also introduce
+the concept of relative strength of regularization,
+and show how it affects the mistake bound and generalization
+performance. We examine the method using
+ℓ1-regularization on a large-scale natural language processing
+task, and obtained state-of-the-art classification
+performance with fairly sparse models."
+8,Fraudulent Support Telephone Number Identification Based on Co-occurrence Information on the Web,"Xin Li, Yiqun Liu, Min Zhang and Shaoping Ma",AI and the Web (AIW),"Fraudulent Support Telephone Number
+Co-occurrence Graph
+Propagation Algorithm","AIW: Enhancing web search and information retrieval
+AIW: Recognizing web spam such as link farms and splogs","""Fraudulent support phones"" refers to the misleading telephone numbers placed on Web pages or other media that claim to provide services with which they are not associated. Most fraudulent support phone information is found on search engine result pages (SERPs), and such information substantially degrades the search engine user experience. In this paper, we propose an approach to identify fraudulent support telephone numbers on the Web based on the co-occurrence relations between telephone numbers that appear on SERPs. We start from a small set of seed official support phone numbers and seed fraudulent numbers. Then, we construct a co-occurrence graph according to the co-occurrence relationships of the telephone numbers that appear on Web pages. Additionally, we take the page layout information into consideration on the assumption that telephone numbers that appear in nearby page blocks should be regarded as more closely related. Finally, we develop a propagation algorithm to diffuse the trust scores of seed official support phone numbers and the distrust scores of the seed fraudulent numbers on the co-occurrence graph to detect additional fraudulent numbers. Experimental results based on over 1.5 million SERPs produced by a popular Chinese commercial search engine indicate that our approach outperforms TrustRank, Anti-TrustRank and Good-Bad Rank algorithms by achieving an AUC value of over 0.90."
+9,Supervised Hashing for Image Retrieval via Image Representation Learning,"Rongkai Xia, Yan Pan, Hanjiang Lai, Cong Liu and Shuicheng Yan","Novel Machine Learning Algorithms (NMLA)
+Vision (VIS)","supervised hashing
+approximate near neighbor search
+representation learning
+convolutional neural networks
+coordinate descent","NMLA: Neural Networks/Deep Learning
+VIS: Image and Video Retrieval","Hashing is a popular approximate nearest neighbor search approach in large-scale image retrieval. Supervised hashing, which incorporates similarity/dissimilarity information on entity pairs to improve the quality of hashing function learning, has recently received increasing attention. However, in the existing supervised hashing methods for images, an input image is usually encoded by a vector of hand-crafted visual features. Such hand-crafted feature vectors do not necessary preserve the accurate semantic similarities of images pairs, which may often degrade the performance of hashing function learning. In this paper, we propose a supervised hashing method for image search, in which we automatically learn a good image representation tailored to hashing as well as a set of hash functions. The proposed method has two stages. In the first stage, given the pairwise similarity matrix $S$ on pairs of training images, we propose a scalable coordinate descent method to decompose $S$ into a product of $HH^T$ where $H$ is a matrix with each of its row being the approximate hash code associated to a training image. In the second stage, we propose to simultaneously learn a good feature representation for the input images as well as a set of hash functions, via a deep convolutional network tailored to the learned hash codes in $H$ or the discrete class labels of the images. Extensive empirical evaluations on three benchmark datasets with different kinds of images show that the proposed method has superior performance gains over several state-of-the-art supervised and unsupervised hashing methods."
+10,Tailoring Local Search for Partial MaxSAT,"Shaowei Cai, Chuan Luo, Kaile Su and John Thornton","Heuristic Search and Optimization (HSO)
+Search and Constraint Satisfaction (SCS)","Partial MaxSAT
+Local Search
+Heuristics","HSO: Heuristic Search
+HSO: Optimization
+SCS: Constraint Optimization","Partial MaxSAT (PMS) is a generalization to SAT and MaxSAT. Many real world problems can be encoded into PMS in a more natural and compact way than SAT and MaxSAT. In this paper, we propose new ideas for local search for PMS, which mainly rely on the distinction between hard and soft clauses. We then use these ideas to develop a local search PMS algorithm called Dist. Experimental results on PMS benchmarks from MaxSAT Evaluation 2013 show that Dist significantly outperforms state-of-the-art PMS algorithms, including both local search algorithms and complete ones, on random and crafted benchmarks. For the industrial benchmark, Dist dramatically outperforms previous local search algorithms and is comparable and complementary to complete algorithms."
+11,R2: An Efficient MCMC Sampler for Probabilistic Programs,"Aditya Nori, Chung-Kil Hur, Sriram Rajamani and Selva Samuel","Novel Machine Learning Algorithms (NMLA)
+Reasoning under Uncertainty (RU)","Probabilistic programming
+Program analysis
+Sampling","MLA: Machine Learning Applications (General/other)
+NMLA: Bayesian Learning
+RU: Bayesian Networks
+RU: Graphical Models (Other)
+RU: Probabilistic Inference","We present a new Markov Chain Monte Carlo (MCMC) sampling algorithm for probabilistic programs. Our approach and tool, called R2, has the unique feature of employing program analysis in order to improve the efficiency of MCMC sampling. Given an input program P, R2 propagates observations in P backwards to obtain a semantically equivalent program P' in which every probabilistic assignment is immediately followed by an observe statement. Inference is performed by a suitably modified version of the Metropolis-Hastings algorithm that exploits the structure of the program P0. This has the overall effect of preventing rejections due to program executions that fail to satisfy observations in P. We formalize the semantics of probabilistic programs and rigorously prove the correctness of R2.We also empirically demonstrate the effectiveness of R2—--in particular, we show that R2 is able to produce results of similar quality as the Church and Stan probabilistic programming tools with much shorter execution time."
+12,Reconsidering Mutual Information Based Feature Selection: A Statistical Significance View,"Vinh Nguyen, Jeffrey Chan and James Bailey",Novel Machine Learning Algorithms (NMLA),"feature selection
+mutual information
+global optimization","NMLA: Data Mining and Knowledge Discovery
+NMLA: Dimension Reduction/Feature Selection","Mutual information (MI) based approaches are an important feature selection paradigm. Although the stated goal of MI-based feature selection is to identify a subset of features that share the highest mutual information with the class variable, most current MI-based techniques are greedy methods that make use of low dimensional MI quantities. The reason for using low dimensional approximation has been mostly attributed to the difficulty associated with estimating the high dimensional MI from limited samples. In this paper, we argue a different viewpoint that,  given a  very large amount of data, the high dimensional MI objective  is still problematic to be employed as a meaningful optimization criterion, due to its overfitting nature: the MI almost always increases as more features are added, thus leading to a trivial solution which includes all features. We  propose a novel approach to the MI-based feature selection problem, in which the overfitting phenomenon is controlled rigourously by means of a statistical test. We develop local and global optimization algorithms for this new feature selection model, and demonstrate its effectiveness in the applications of explaining variables and objects."
+13,Influence Maximization with Novelty Decay in Social Networks,"Shanshan Feng, Xuefeng Chen, Gao Cong, Yifeng Zeng, Yeow Meng Chee and Yanping Xiang",AI and the Web (AIW),"social networks
+influence maximization
+novelty decay",AIW: Social networking and community identification,"Influence maximization problem is to find a set of seed
+nodes in a social network such that their influence
+spread is maximized under certain propagation models.
+A few algorithms have been proposed for this problem.
+However, they have not considered the impact of
+novelty decay in influence propagation, i.e., repeated
+exposures will have diminishing influence on users. In
+this paper, we consider the problem of influence max-
+imization with novelty decay (IMND). We investigate
+the effect of novelty decay on influence propagation in
+real-life datasets and formulate the IMND problem. We
+further analyze its relevant properties and propose an
+influence estimation technique. We demonstrate perfor-
+mance of our algorithms over four social networks."
+14,Solving Uncertain MDPs by Reusing State Information and Plans,"Ping Hou, William Yeoh and Tran Cao Son",Planning and Scheduling (PS),"Markov Decision Processes (MDPs)
+Replanning
+Incremental Search
+Uncertain MDPs","PS: Probabilistic Planning
+PS: Replanning and Plan Repair
+PS: Planning (General/Other)","While Markov decision processes (MDPs) are powerful tools for modeling sequential decision making problems under uncertainty, they are sensitive to the accuracy of their parameters. MDPs with uncertainty in their parameters are called Uncertain MDPs. In this paper, we introduce a general framework that allows off-the-shelf MDP algorithms to solve Uncertain MDPs by planning based on currently available information and replan if and when the problem changes. We demonstrate the generality of this approach by showing that it can use the VI, TVI, ILAO*, LRTDP, and UCT algorithms to solve Uncertain MDPs. We experimentally show that our approach is typically faster than replanning from scratch and we also provide a way to estimate the amount of speedup based on the amount of information is reused."
+15,Identifying Differences in Physician Communication Styles with a Log-Linear Transition Component Model,"Byron Wallace, Issa Dahabreh, Michael Barton Laws, Ira Wilson, Thomas Trikalinos and Eugene Charniak","Applications (APP)
+Machine Learning Applications (MLA)
+NLP and Machine Learning (NLPML)","Conversation modeling
+Patient-doctor communication
+Sequential component model","APP: Biomedical / Bioinformatics
+MLA: Bio/Medicine
+MLA: Applications of Supervised Learning
+NLPML: Discourse and Dialogue","We consider the task of grouping doctors with respect to communication patterns exhibited in outpatient visits. We propose a novel approach toward this end in which we model speech act transitions in conversations via a log-linear model incorporating physician specific components. We train this model over transcripts of outpatient visits annotated with speech act codes and then cluster physicians in (a transformation of) this parameter space. We find significant correlations between the induced groupings and patient survey response data comprising ratings of physician communication. Furthermore, the novel sequential component model we leverage to induce this clustering allows us to explore differences across these groups. This work demonstrates how statistical AI might be used to better understand (and ultimately improve) physician communication."
+16,Multi-Organ Exchange: The Whole is Greater than the Sum of its Parts,John Dickerson and Tuomas Sandholm,"Applications (APP)
+Game Theory and Economic Paradigms (GTEP)
+Multiagent Systems (MAS)","Kidney exchange
+Sparse random graphs
+Computational economics","APP: Biomedical / Bioinformatics
+GTEP: Auctions and Market-Based Systems
+MAS: Mechanism Design","Kidney exchange, where candidates with organ failure trade incompatible but willing donors, is a life-saving alternative to the deceased donor waitlist, which has inadequate supply to meet demand.  While fielded kidney exchanges see huge benefit from altruistic kidney donors (who give an organ without a paired needy candidate), a significantly higher medical risk to the donor deters similar altruism with livers.  In this paper, we begin by proposing the idea of liver exchange, and show on demographically accurate data that vetted kidney exchange algorithms can be adapted to clear such an exchange at the nationwide level.  We then explore cross-organ donation where kidneys and livers can be bartered for each other.  We show theoretically that this multi-organ exchange provides linearly more transplants than running separate kidney and liver exchanges; this linear gain is a product of altruistic kidney donors creating chains that thread through the liver pool.  We support this result experimentally on demographically accurate multi-organ exchanges.  We conclude with thoughts regarding the fielding of a nationwide liver or joint liver-kidney exchange from a legal and computational point of view."
+17,A Latent Variable Model for Discovering Bird Species Commonly Misidentified by Citizen Scientists,"Jun Yu, Rebecca Hutchinson and Weng-Keen Wong",Computational Sustainability and AI (CSAI),"Probabilistic Graphical Model
+Crowdsourcing
+Citizen Science
+Ecology",CSAI: Modeling and prediction of dynamic and spatiotemporal phenomena and systems,"Data quality is a common source of concern for large-scale citizen science projects like eBird. In the case of eBird, a major cause of poor quality data is the misidentification of bird species by inexperienced contributors. A proactive approach for improving data quality is to identify commonly misidentified bird species and to teach inexperienced birders the differences between these species. In this paper, we develop a latent variable graphical model that can identify groups of bird species that are often confused for each other by eBird participants. Our model is a multi-species extension of the classic occupancy-detection model in the ecology literature. This multi-species extension is non-trivial, requiring a structure learning step as well as a computationally expensive parameter learning stage which we make efficient through a variational approximation. We show that by including these species misidentifications in the model, we can not only discover these misidentifications but predictions of both species occupancy and detection are also more accurate."
+18,Cross-View Feature Learning for Scalable Social Image Analysis,"Wenxuan Xie, Yuxin Peng and Jianguo Xiao",AI and the Web (AIW),"Cross-View Learning
+Feature Learning
+Random Projection","AIW: AI for multimedia and multimodal web applications
+AIW: Enhancing web search and information retrieval
+AIW: Machine learning and the web","Nowadays images on social networking websites (e.g., Flickr) are mostly accompanied with user-contributed tags, which help cast a new light on the conventional content-based image analysis tasks such as image classification and retrieval. In order to establish a scalable social image analysis system, two issues need to be considered: 1) Supervised learning is a futile task in modeling the enormous number of concepts in the world, whereas unsupervised approaches overcome this hurdle; 2) Algorithms are required to be both spatially and temporally efficient to handle large-scale datasets. In this paper, we propose a cross-view feature learning (CVFL) framework to handle the problem of social image analysis effectively and efficiently. Through explicitly modeling the relevance between image content and tags (which is empirically shown to be visually and semantically meaningful), CVFL yields more promising results than existing methods in the experiments. More importantly, being general and descriptive, CVFL and its variants can be readily applied to other large-scale multi-view tasks in unsupervised setting."
+19,Semantic Graph Construction for Weakly-Supervised Image Parsing,"Wenxuan Xie, Yuxin Peng and Jianguo Xiao",Vision (VIS),"Weakly-Supervised Learning
+Image Parsing
+Graph Construction","VIS: Categorization
+VIS: Object Recognition","We investigate weakly-supervised image parsing, i.e., assigning class labels to image regions by using image-level labels only. Existing studies pay main attention to the formulation of the weakly-supervised learning problem, i.e., how to propagate class labels from images to regions given an affinity graph of regions. Notably, however, the affinity graph of regions, which is generally constructed in relatively simpler settings in existing methods, is of crucial importance to the parsing performance due to the fact that the weakly-supervised parsing problem cannot be solved within a single image, and that the affinity graph enables label propagation among multiple images. In order to embed more semantics into the affinity graph, we propose novel criteria by exploiting the weak supervision information carefully, and develop two graphs: L1 semantic graph and k-NN semantic graph. Experimental results demonstrate that the proposed semantic graphs not only capture more semantic relevance, but also perform significantly better than conventional graphs in image parsing."
+20,The Importance of Cognition and Affect for Artificially Intelligent Decision Makers,"Celso de Melo, Jonathan Gratch and Peter Carnevale","Cognitive Modeling (CM)
+Cognitive Systems (CS)
+Humans and AI (HAI)","Mind perception
+cognition
+affect
+Decision making
+cooperation","CM: Simulating Humans
+CS: Problem solving and decision making
+HAI: Human-Computer Interaction
+HAI: Understanding People, Theories, Concepts and Methods","Agency – the capacity to plan and act – and experience – the capacity to sense and feel – are two critical aspects that determine whether people will perceive non-human entities, such as autonomous agents, to have a mind. There is evidence that the absence of either can reduce cooperation. We present an experiment that tests the necessity of both for cooperation with agents. In this experiment we manipulated people’s perceptions about the cognitive and affective abilities of agents, when engaging in the ultimatum game. The results indicated that people offered more money to agents that were perceived to make decisions according to their intentions, rather than randomly. Additionally, the results showed that people offered more money to agents that expressed emotion, when compared to agents that did not. We discuss the implications of this agency-experience theoretical framework for the design of artificially intelligent decision makers."
+21,The Complexity of Reasoning with FODD and GFODD,Benjamin Hescott and Roni Khardon,Knowledge Representation and Reasoning (KRR),"Decision Diagrams
+Computational Complexity
+First Order Logic","KRR: Automated Reasoning and Theorem Proving
+KRR: Computational Complexity of Reasoning
+KRR: Knowledge Representation Languages","Recent work introduced Generalized First Order Decision Diagrams (GFODD) as a knowledge representation that is useful in mechanizing decision theoretic planning in relational domains. GFODDs generalize function-free first order logic and include numerical values and numerical generalizations of existential and universal quantification. Previous work presented heuristic inference algorithms for GFODDs. In this paper, we study the complexity of the evaluation problem, the satiability problem, and the equivalence problem for GFODDs under the assumption that the size of the intended model is given with the problem, a restriction that guarantees decidability. Our results provide a complete characterization. The same characterization applies to the corresponding restriction of problems in first order logic, giving an interesting new avenue for efficient inference when the number of objects is bounded. Our results show that for $\Sigma_k$ formulas, and for corresponding GFODDs, evaluation and satisfiability are $\Sigma_k^p$ complete, and equivalence is $\Pi_{k+1}^p$ complete. For $\Pi_k$ formulas evaluation is $\Pi_k^p$ complete, satisfiability is one level higher and is $\Sigma_{k+1}^p$ complete, and equivalence is $\Pi_{k+1}^p$ complete."
+22,Scalable Complex Contract Negotiation With Structured Search and Agenda Management,"Xiaoqin Zhang, Mark Klein and Ivan Marsa Maestre",Multiagent Systems (MAS),"Large-scale Negotiation
+Interdependent Issues
+Complex Contracts
+agenda management","MAS: Distributed Problem Solving
+MAS: Mechanism Design
+MAS: Multiagent Systems (General/other)
+SCS: Distributed CSP/Optimization","A large number of interdependent issues in complex contract poses a challenge for current negotiation approaches, which becomes even more apparent when negotiation problems scale up. To address this challenge, we present a structured anytime search process with agenda management mechanism using a hierarchical negotiation model, where agents search at various levels during the negotiation with the guidance from a mediator agent. This structured negotiation process increases computational efficiency, making negotiations scalable for large number of interdependent issues. To validate the contributions of our approach, 1) we developed anytime tree search negotiation process with an agenda management mechanism using a hierarchical problem structure and constraint-based preference model for real-world applications; 2) we defined a scenario matrix to capture various characteristics of negotiation scenarios and developed a scenario generator that produces testing cases according to this matrix; and 3) we performed an extensive set of experiments to study the performance of this structured negotiation protocol and the influence of different scenario parameters, and investigated the Pareto efficiency and social welfare optimality of the negotiation outcomes."
+23,Manifold Learning for Jointly Modeling Topic and Visualization,Tuan Le and Hady Lauw,Novel Machine Learning Algorithms (NMLA),"document visualization
+dimensionality reduction
+topic model
+manifold learning","NMLA: Data Mining and Knowledge Discovery
+NMLA: Dimension Reduction/Feature Selection
+NMLA: Graphical Model Learning
+NMLA: Unsupervised Learning (Other)","Classical approaches to visualization directly reduce a document's high-dimensional representation into visualizable two or three dimensions, using techniques such as multidimensional scaling.  More recent approaches consider an intermediate representation in topic space, between word space and visualization space, which preserves the semantics by topic modeling.  We call the latter semantic visualization problem, as it seeks to jointly model topic and visualization. While previous approaches aim to preserve the global consistency, they do not consider the local consistency in terms of the intrinsic geometric structure of the document manifold.  We therefore propose an unsupervised probabilistic model, called Semafore, which aims to preserve the manifold in the lower-dimensional spaces.  Comprehensive experiments on several real-life text datasets of news articles and web pages show that Semafore significantly outperforms the state-of-the-art baselines on objective evaluation metrics."
+24,Constructing Symbolic Representations for High-Level Planning,"George Konidaris, Leslie Kaelbling and Tomas Lozano-Perez",Novel Machine Learning Algorithms (NMLA),"Reinforcement learning
+Planning
+Representation","NMLA: Reinforcement Learning
+PS: Learning Models for Planning and Diagnosis
+ROB: Cognitive Robotics","We consider the problem of constructing a symbolic description of a continuous, low-level environment for use in planning. We show that  symbols that can represent the preconditions and effects of an agent's actions are both necessary and sufficient for high-level planning.  This enables reinforcement learning agents to acquire their own symbolic representations autonomously, and eliminates the symbol design problem when a representation must be constructed in advance. The resulting representation can be converted into PDDL, a canonical planning representation that enables very fast planning."
+25,Towards Understanding Unscripted Gesture and Language Input for Human-Robot Interactions,"Cynthia Matuszek, Liefeng Bo, Luke Zettlemoyer and Dieter Fox","Humans and AI (HAI)
+NLP and Machine Learning (NLPML)
+Robotics (ROB)","Human-Robot Interaction
+Robotics
+Natural Language Processing
+ML classifier features","APP: Other Applications
+HAI: Language Acquisition
+MLA: Machine Learning Applications (General/other)
+NLPML: Natural Language Processing (General/Other)
+NMLA: Time-Series/Data Streams
+ROB: Human-Robot Interaction","As robots become more ubiquitous, it is increasingly important for untrained users to be able to interact with them intuitively. In this work, we investigate how people refer to objects in the world during relatively unstructured communication with robots. We collect a corpus of interactions from users describing objects, which we use to train language and gesture models that allow our robot to determine what objects are being indicated. We introduce a temporal extension to state-of-the-art hierarchical matching pursuit features to support gesture understanding, and demonstrate that combining multiple communication modalities more effectively captures user intent than relying on a single type of input. Finally, we present initial interactions with a robot that uses the learned models to follow commands while continuing to learn from user input."
+26,Intelligent System for Urban Emergency Management During Large-scale Disaster,"Xuan Song, Quanshi Zhang and Ryosuke Shibasaki",Computational Sustainability and AI (CSAI),"Emergency Management
+Disaster Informatics
+Human Mobility",CSAI: Modeling and prediction of dynamic and spatiotemporal phenomena and systems,"The frequency and intensity of natural disasters has significantly increased over the past decades and this trend is predicted to continue. Facing these unexpected disasters, urban emergency management has become the especially important issue for the whole governments around the world. In this paper, we present a novel intelligent system for urban emergency management during the large-scale disasters. The proposed system stores and manages the global positioning system (GPS) records from mobile devices used by approximately 1.6 million people throughout Japan from 1 August 2010 to 31 July 2011. By mining and analyzing population movements after the Great East Japan Earthquake, our system is able to automatically learn a probabilistic model to better understand and simulate human mobility during the emergency situations. Based on the learning model, population mobility in various urban areas impacted by the earthquake throughout Japan is able to be automatically simulated or predicted. On the basis of such kind of system, it is easy for us to find some new features or population mobility patterns after the recent and unprecedented composite disasters, which are likely to provide the valuable experiences and play a vital role for future disaster management worldwide."
+27,Cached Iterative Weakening for Optimal Multi-Way Number Partitioning,Ethan Schreiber and Richard Korf,"Heuristic Search and Optimization (HSO)
+Planning and Scheduling (PS)
+Search and Constraint Satisfaction (SCS)","Heuristic Search
+Optimization
+Search
+Scheduling
+Constraint Optimization","HSO: Heuristic Search
+HSO: Optimization
+HSO: Search (General/Other)
+PS: Scheduling
+SCS: Constraint Satisfaction","The NP-hard number-partitioning problem is to separate a multiset
+  S of n positive integers into k subsets, such that the largest
+  sum of the integers assigned to any subset is minimized. The classic
+  application is scheduling a set of n jobs with different run times
+  onto k identical machines such that the makespan, the time to
+  complete the schedule, is minimized. We present a new algorithm,
+  cached iterative weakening (CIW), for solving this problem
+  optimally. It incorporates three ideas distinct from the previous
+  state of the art: it explores the search space using iterative
+  weakening instead of branch and bound; generates feasible subsets
+  once and caches them instead of at each node of the search tree; and
+  explores subsets in cardinality order instead of an arbitrary
+  order. The previous state of the art is represented by three different
+  algorithms depending on the values of n and k. We provide one
+  algorithm which outperforms all previous algorithms for k >=
+  4. Our run times are up to two orders of magnitude faster."
+28,Online Social Spammer Detection,"Xia Hu, Jiliang Tang and Huan Liu","AI and the Web (AIW)
+Machine Learning Applications (MLA)","Social Media
+Social Spammer
+Online Learning","AIW: Machine learning and the web
+AIW: Recognizing web spam such as link farms and splogs
+AIW: Web personalization and user modeling
+MLA: Machine Learning Applications (General/other)
+NMLA: Data Mining and Knowledge Discovery
+NMLA: Online Learning","The explosive use of social media also makes it a popular platform for malicious users, known as social spammers, to overwhelm normal users with unwanted content. One effective way for social spammer detection is to build a classifier based on content and social network information. However, social spammers are sophisticated and adaptable to game the system with fast evolving content and network patterns. First, social spammers continually change their spamming content patterns to avoid being detected.  Second, reflexive reciprocity makes it easier for social spammers to establish social influence and pretend to be normal users by quickly accumulating a large number of ``human"" friends. It is challenging for existing anti-spamming systems based on batch-mode learning to quickly respond to newly emerging patterns for effective social spammer detection. In this paper, we present a general optimization framework to collectively use content and network information for social spammer detection, and provide the solution for efficient online processing. Experimental results on Twitter datasets confirm the  effectiveness and efficiency of the proposed framework."
+29,Modeling and Predicting Popularity Dynamics via Reinforced Poisson Process,"Huawei Shen, Dashun Wang, Chaoming Song and Albert Laszlo Barabasi",Applications (APP),"Social Dynamics
+Poisson Process
+Popularity Prediction","APP: Computational Social Science
+APP: Social Networks",An ability to predict the popularity dynamics of individual items within a complex evolving system has important implications in an array of areas. Here we propose a generative probabilistic framework using a reinforced Poisson process to model explicitly the process through which individual items gain their popularity. This model distinguishes itself from existing models via its capability of modeling the arrival process of popularity and its remarkable power at predicting the popularity of individual items. It possesses the flexibility of applying Bayesian treatment to further improve the predictive power using a conjugate prior. Extensive experiments on a longitudinal citation dataset demonstrate that this model consistently outperforms existing popularity prediction methods
+30,The Computational Rise and Fall of Fairness,"John Dickerson, Jonathan Goldman, Jeremy Karp, Ariel Procaccia and Tuomas Sandholm",Game Theory and Economic Paradigms (GTEP),"Fair division
+Computational social choice
+Envy-free allocation
+Phase transition",GTEP: Social Choice / Voting,"The fair division of indivisible goods has long been an important topic in economics and, more recently, computer science.  We investigate the existence of envy-free allocations of indivisible goods, that is, allocations where each player values her own allocated set of goods at least as highly as any other player's allocated set of goods.  Under additive valuations, we show that even when the number of goods is larger than the number of agents by a linear fraction, envy-free allocations are unlikely to exist.  We then show that when the number of goods is larger by a logarithmic factor, such allocations exist with high probability.  We support these results experimentally and show that the asymptotic behavior of the theory holds even when the number of goods and agents is quite small.  We demonstrate that there is a sharp phase transition from nonexistence to existence of envy-free allocations, and that on average the computational problem is hardest at that transition."
+31,Type-based Exploration  for Satisficing Planning with Multiple Search Queues,"Fan Xie, Martin Mueller and Robert Holte","Heuristic Search and Optimization (HSO)
+Planning and Scheduling (PS)","Satisficing Planning
+Heuristic Search
+Greedy Best First Search","HSO: Heuristic Search
+PS: Deterministic Planning","Utilizing multiple queues in Greedy Best-First Search (GBFS) has been proven to be a very effective approach to satisficing planning. Successful applications include extra queues based on Helpful Actions (or Preferred Operators), as well as using Multiple Heuristics. One weakness of all standard GBFS algorithms is their lack of exploration. All queues used in these methods work as priority queues sorted by heuristic values. Therefore, misleading heuristics, especially early in the search process, cause the search to become ineffective.
+
+Type systems, as introduced for heuristic search by Lelis et al, are a recent development of ideas for exploration related to the classic stratified sampling approach. The current work introduces a search algorithm that utilizes type systems in a new way – for exploration within a GBFS multiqueue frame- work, in satisficing planning.
+
+A careful case study shows the benefits of such exploration for overcoming deficiencies of the heuristic. The proposed new baseline algorithm Type-GBFS solves almost 200 more problems than baseline GBFS over all International Planning Competition problems. Type-LAMA, a new planner which integrates Type-GBFS into LAMA-2011, substantially improves upon LAMA in terms of both coverage and speed."
+32,Exact Subspace Clustering in Linear Time,"Shusen Wang, Bojun Tu, Congfu Xu and Zhihua Zhang",Novel Machine Learning Algorithms (NMLA),"subspace clustering
+data selection
+scalable algorithm
+robust principal component analysis",NMLA: Clustering,"Subspace clustering is an important unsupervised learning problem with wide applications in computer vision and data analysis. However, the state-of-the-art methods for this problem suffer from high time complexity---quadratic or cubic in $n$ (the number of data instances). In this paper we exploit a data selection algorithm to speedup computation and the robust principal component analysis to strengthen robustness. Accordingly, we devise a scalable and robust subspace clustering method which costs time only linear in $n$. We prove theoretically that under certain mild assumptions our method solves the subspace clustering problem exactly even for grossly corrupted data. Our algorithm is based on very simple ideas, yet it is the only linear time algorithm with noiseless or noisy recovery guarantee. Finally, empirical results verify our theoretical analysis."
+33,Robust Bayesian Inverse Reinforcement Learning with Sparse Behavior Noise,"Jiangchuan Zheng, Siyuan Liu and Lionel Ni",Novel Machine Learning Algorithms (NMLA),"Inverse reinforcement learning
+Robust model
+Sparse behavior noise
+Variational inference",NMLA: Reinforcement Learning,"Inverse reinforcement learning (IRL) aims to recover the reward function underlying a Markov Decision Process from behaviors of experts in support of decision-making. Most recent work on IRL assumes the same level of trustworthiness of all expert behaviors, and frames IRL as a process of seeking reward function that makes those behaviors appear (near)-optimal. However, it is common in reality that noisy expert behaviors disobeying the optimal policy exist, which may degrade the IRL performance significantly. To address this issue, in this paper, we develop a robust IRL framework that can accurately estimate the reward function in the presence of behavior noise. In particular, we focus on a special type of behavior noise referred to as sparse noise due to its wide popularity in real-world behavior data. To model such noise, we introduce a novel latent variable characterizing the reliability of each expert action and use Laplace distribution as its prior. We then device an EM algorithm with a novel variational inference procedure in the E-step, which can automatically identify and remove behavior noise in reward learning. Experiments on both synthetic data and real vehicle routing data with noticeable behavior noise show significant improvement of our method over previous approaches in learning accuracy, and also demonstrate its power in de-noising behavior data."
+34,Lazy Defenders Are Almost Optimal Against Diligent Attackers,"Avrim Blum, Nika Haghtalab and Ariel Procaccia",Game Theory and Economic Paradigms (GTEP),"Security games
+Approximation
+Sampling","GTEP: Game Theory
+GTEP: Imperfect Information","Most work building on the Stackelberg security games model assumes that the attacker can perfectly observe the defender's randomized assignment of resources to targets. This assumption has been challenged by recent papers, which designed tailor-made algorithms that compute optimal defender strategies for security games with limited surveillance. We analytically demonstrate that in zero-sum security games, lazy defenders, who simply keep optimizing against perfectly informed attackers, are almost optimal against diligent attackers, who go to the effort of gathering a reasonable number of observations. This result implies that, in some realistic situations, limited surveillance may not need to be explicitly addressed."
+35,PREGO: An Action Language for Belief-Based Cognitive Robotics in Continuous Domains,Vaishak Belle and Hector Levesque,Knowledge Representation and Reasoning (KRR),"knowledge representation
+situation calculus
+cognitive robotics
+reasoning about beliefs
+action and change
+action languages","KRR: Action, Change, and Causality
+KRR: Knowledge Representation Languages
+KRR: Reasoning with Beliefs
+KRR: Knowledge Representation (General/Other)","Cognitive robotics is often subject to the criticism that the proposals
+investigated in the literature are far removed from the kind of continuous
+uncertainty and noise seen in actual real-world robotics. This paper
+proposes a new language and an implemented system, called PREGO, based on
+the situation calculus, that is able to reason effectively about degrees of
+belief against noisy sensors and effectors in continuous domains. It
+embodies the representational richness of conventional logic-based action
+languages, such as context-sensitive successor state axioms, but is still
+shown to be efficient using a number of empirical evaluations. We believe
+that PREGO is a simple yet powerful dialect to explore real-time reactivity
+and an interesting bridge between logic and probability for cognitive
+robotics applications."
+36,Dropout Training for Support Vector Machines,"Ning Chen, Jun Zhu, Jianfei Chen and Bo Zhang","Machine Learning Applications (MLA)
+Novel Machine Learning Algorithms (NMLA)","Dropout traning
+Support Vector Machines
+Data Augmentation
+Feature Noising","MLA: Applications of Supervised Learning
+NMLA: Classification
+NMLA: Supervised Learning (Other)
+NMLA: Machine Learning (General/other)","Dropout and other feature noising schemes have shown promising results in controlling over-fitting by artificially corrupting the training data. Though extensive theoretical and empirical studies have been performed for generalized linear models, little work has been done for support vector machines (SVMs), one of the most successful approaches for supervised learning. This paper presents dropout training for linear SVMs. To deal with the intractable expectation of the non-smooth hinge loss under corrupting distributions, we develop an iteratively re-weighted least square (IRLS) algorithm by exploring data augmentation techniques. Our algorithm iteratively minimizes the expectation of a re-weighted least square problem, where the re-weights have closed-form solutions. The similar ideas are applied to develop a new IRLS algorithm for the expected logistic loss under corrupting distributions. Our algorithms offer insights on the connection and difference between the hinge loss and logistic loss in dropout training. Empirical results on several real datasets demonstrate the effectiveness of dropout training on significantly boosting the classification accuracy of linear SVMs."
+37,Game-theoretic Resource Allocation for Protecting Large Public Events,"Yue Yin, Bo An and Manish Jain","Applications (APP)
+Game Theory and Economic Paradigms (GTEP)
+Multiagent Systems (MAS)","Security
+Game Theory
+Stackelberg Games","APP: Security and Privacy
+GTEP: Game Theory
+MAS: Multiagent Systems (General/other)","High profile large scale public events are attractive targets for terrorist attacks. The recent Boston Marathon bombings on April 15, 2013 have further emphasized the importance of protecting public events. The security challenge is exacerbated by the dynamic nature of such events: e.g., the impact of an attack at different locations changes over time as the Boston marathon participants and spectators move along the race track. In addition, the defender can relocate security resources among potential attack targets at any time and the attacker may act at any time during the event.
+
+This paper focuses on developing efficient patrolling algorithms for such dynamic domains with continuous strategy spaces for both the defender and the attacker. We aim at computing optimal pure defender strategies, since an attacker does not have an opportunity to learn and respond to mixed strategies due to the relative infrequency of such events. We propose SCOUT-A, which makes assumptions on relocation cost, exploits payoff representation and computes optimal solutions efficiently. We also propose SCOUT-C to compute the exact optimal defender strategy for general cases despite the continuous strategy spaces. SCOUT-C computes the optimal defender strategy by constructing an equivalent game with discrete defender strategy space, then solving the constructed game. Experimental results show that both SCOUT-A and SCOUT-C significantly outperform other existing strategies."
+38,Quality-based Learning for Web Data Classification,Ou Wu,"AI and the Web (AIW)
+Machine Learning Applications (MLA)","Information quality
+Multi-task learning
+Web data classification","AIW: Machine learning and the web
+MLA: Applications of Supervised Learning","The types of web data vary in terms of information quantity and quality. For example, some pages contain numerous texts, whereas some others contain few texts; some web videos are in high resolution, whereas some other web videos are in low resolution. As a consequence, the quality of extracted features from different web data may also vary greatly. Existing learning algorithms on web data classification usually ignore the variations of information quality or quantity. In this paper, the information quantity and quality of web data are described by quality-related factors such as text length and image quantity, and a new learning method is proposed to train classifiers based on quality-related factors. The method divides training data into subsets according to the clustering results of quality-related factors and then trains classifiers by using a multi-task learning strategy for each subset. Experimental results indicate that the quality-related factors are useful in web data classification, and the proposed method outperforms conventional algorithms that do not consider information quantity and quality."
+39,A Strategy-Proof Online Auction with Time Discounting Values,"Fan Wu, Junming Liu, Zhenzhe Zheng and Guihai Chen",Game Theory and Economic Paradigms (GTEP),"Online Auction
+Mechanism Design
+Game Theory",GTEP: Auctions and Market-Based Systems,"Online mechanism design has been widely applied to various practical applications. However, designing a strategy-proof online mechanism is much more challenging than that in a static scenario due to short of knowledge of future information. In this paper, we investigate online auctions with time discounting values, in contrast to the flat values studied in most of existing work. We present a strategy-proof 2-competitive online auction mechanism despite of time discounting values. We also implement our design and compare it with off-line optimal solution. Our numerical results show that our design achieves good performance in terms of social welfare, revenue, average winning delay, and average valuation loss."
+40,ReLISH: Reliable Label Inference via Smoothness Hypothesis,"Chen Gong, Dacheng Tao, Keren Fu and Jie Yang",Novel Machine Learning Algorithms (NMLA),"Semi-supervised learning
+Local smoothness
+Regularization","NMLA: Classification
+NMLA: Semisupervised Learning","The smoothness hypothesis is critical for graph-based semi-supervised learning. This paper defines local smoothness, based on which a new algorithm, Reliable Label Inference via Smoothness Hypothesis (ReLISH), is proposed. ReLISH has produced smoother labels than some existing methods for both labeled and unlabeled examples. Theoretical analyses demonstrate good stability and generalizability of ReLISH. Using real-world datasets, our empirical analyses reveal that ReLISH is promising for both transductive and inductive tasks, when compared with representative algorithms, including Harmonic Functions, Local and Global Consistency, Constraint Metric Learning, Linear Neighborhood Propagation, and Manifold Regularization."
+41,"Parallel Materialisation of Datalog Programs in Centralised, Main-Memory RDF Systems","Boris Motik, Yavor Nenov, Robert Piro, Ian Horrocks and Dan Olteanu","AI and the Web (AIW)
+Knowledge Representation and Reasoning (KRR)","datalog
+materialization
+fixpoint computation
+parallelism
+big data","AIW: Question answering on the web
+AIW: Representing, reasoning, and using provenance, trust, privacy, and security on the web
+KRR: Ontologies
+KRR: Automated Reasoning and Theorem Proving
+KRR: Logic Programming","We present a novel approach to parallel materialisation (i.e., fixpoint computation) of datalog programs in centralised, main-memory, multi-core RDF systems. The approach comprises an algorithm that evenly distributes the workload to cores, and an RDF indexing data structure that supports efficient, 'mostly' lock-free parallel updates. Our empirical evaluation shows that our approach parallelises computation very well so, with 16 physical cores, materialisation can be up to 13.9 times faster than with just one core."
+42,Non-linear Label Ranking for Large-scale Prediction of Long-Term User Interests,"Nemanja Djuric, Mihajlo Grbovic, Vladan Radosavljevic, Narayan Bhamidipati and Slobodan Vucetic","Machine Learning Applications (MLA)
+Novel Machine Learning Algorithms (NMLA)","Computational advertising
+Label ranking
+Online learning
+Large-scale learning
+Big data","MLA: Applications of Supervised Learning
+NMLA: Big Data / Scalability
+NMLA: Preferences/Ranking Learning","We consider the problem of personalization of online services from the viewpoint of display ad targeting, where we seek to find the best ad categories to be shown to each user, resulting in improved user experience and increased advertiser's revenue. We propose to address this problem as a task of ranking the ad categories by each user's preferences, and introduce a novel label ranking approach capable of efficiently learning non-linear, highly accurate models in large-scale settings. Experiments on real-world advertising data set with more than 3.2 million users show that the proposed algorithm outperforms the existing solutions in terms of both rank loss and top-K retrieval performance, strongly suggesting the benefit of using the proposed model on large-scale ranking problems."
+43,Efficient Object Detection via Adaptive Online Selection of Sensor-Array Elements,Matthai Philipose,"Novel Machine Learning Algorithms (NMLA)
+Planning and Scheduling (PS)
+Reasoning under Uncertainty (RU)
+Vision (VIS)","object detection
+low power
+value of information
+adaptive submodular optimization
+online optimization","MLA: Machine Learning Applications (General/other)
+NMLA: Active Learning
+NMLA: Bayesian Learning
+PS: Probabilistic Planning
+PS: Temporal Planning
+RU: Bayesian Networks
+RU: Decision/Utility Theory
+RU: Probabilistic Inference
+RU: Sequential Decision Making
+VIS: Categorization
+VIS: Object Detection
+VIS: Statistical Methods and Learning
+VIS: Videos","We examine how to use emerging far-infrared imager ensembles to detect certain
+objects of interest (e.g., faces, hands, people and animals) in synchronized
+RGB video streams at very low power. We formulate the problem as one of selecting
+subsets of sensing elements (among many thousand possibilities) from the
+ensembles for  tests. The subset selection  problem is naturally {\em adaptive} and {\em online}: testing certain elements early can obviate the need for testing many others later, and selection policies must be updated at inference time. We pose the ensemble sensor selection problem as a structured extension of test-cost-sensitive classification, propose a principled suite of techniques to exploit ensemble structure to  speed up processing and show how to re-estimate policies fast. We estimate reductions in power consumption of roughly 50x relative to even highly optimized implementations of face detection, a canonical object-detection problem. We also illustrate the benefits of adaptivity and online estimation."
+44,Simultaneous Cake Cutting,"Eric Balkanski, Simina Brânzei, David Kurokawa and Ariel Procaccia",Game Theory and Economic Paradigms (GTEP),"Cake cutting
+Fair division
+Computational social choice",GTEP: Social Choice / Voting,"We introduce the simultaneous model for cake cutting (the fair allocation of a divisible good), in which agents simultaneously send messages containing a sketch of their preferences over the cake. We show that this model enables the computation of divisions that satisfy proportionality — a popular fairness notion — using a protocol that circumvents a standard lower bound via parallel information elicitation. Cake divisions satisfying another prominent fairness notion, envy-freeness, are impossible to compute in the simultaneous model, but such allocations admit arbitrarily good approximations."
+45,Recovering from Selection Bias in Causal and Statistical Inference,"Elias Bareinboim, Jin Tian and Judea Pearl","Knowledge Representation and Reasoning (KRR)
+Reasoning under Uncertainty (RU)","Causal Inference
+Causal Reasoning
+Do-calculus
+Causality
+Selection Bias
+Sampling Selection Bias
+Case-control studies
+Bias Removal
+Backdoor criterion","KRR: Action, Change, and Causality
+RU: Bayesian Networks
+RU: Uncertainty in AI (General/Other)","Selection bias is caused by preferential exclusion of units from the samples and represents a major obstacle to valid causal and statistical inferences; it cannot be removed by randomized experiments and can rarely be detected  in either experimental or observational studies.  Extending the results of (Bareinboim and Pearl 2012), we provide complete graphical and algorithmic conditions for recovering conditional probabilities from selection biased data.  We further provide graphical conditions for recoverability when unbiased data is available over a subset of the variables. Finally, we provide a graphical condition that generalizes the backdoor criterion and serves to recover causal effects when the data is collected under preferential selection."
+46,Semi-supervised Target Alignment via Label-Aware Base Kernels,"Qiaojun Wang, Kai Zhang and Ivan Marsic",Novel Machine Learning Algorithms (NMLA),"Semi-supervised Kernel Learning
+Eigenfunction Extrapolation
+Kernel Target Alignment
+Ideal Kernel","NMLA: Kernel Methods
+NMLA: Semisupervised Learning","Currently, a large family of kernel methods for semi-supervised learning(SSL) problems builds the kernel by weighted average of predefined base kernels (i.e., those spanned by kernel eigenvectors). Optimization of the base kernel weights has been studied extensively in the literatures. However, little attention was devoted to designing high-quality base kernels. Note that the eigenvectors of the kernel matrix, which are computed irrespective of class labels, may not always reveal useful structures of the target. As a result, the generalization performance can be poor however hard the base kernel weighting is tuned. On the other hand, there are many SSL algorithms whose focus is not on kernel design but instead the estimation of the class labels directly. Motivated by the label propagation approach, in this paper we propose to construct novel kernel eigenvectors by injecting the class label information under the framework of eigenfunction extrapolation. A set of ``label-aware'' base kernels can be obtained with greatly improved quality, which leads to higher target alignment and henceforth better performance. Our approach is computationally efficient, and demonstrates encouraging performance in semi-supervised classification and regression tasks."
+47,Active Learning with Model Selection via Nested Cross-Validation,"Alnur Ali, Rich Caruana and Ashish Kapoor",Humans and AI (HAI),"active learning
+model selection
+machine learning",NMLA: Active Learning,"Most work on active learning avoids the issue of model selection by training models of only one type (SVMs, boosted trees, etc.) using one pre-defined set of model hyperparameters.  We propose an algorithm that actively samples data to simultaneously train a set of candidate models (different model types and/or different hyperparameters) and also to select the best model from this set of candidates.  The algorithm actively samples points for training that are most likely to improve the accuracy of the more promising candidate models, and also samples points to use for model selection---all samples count against the same ﬁxed labeling budget. This exposes a natural trade-off between the focused active sampling that is most effective for training models, and the unbiased uniform sampling that is better for model selection.  We empirically demonstrate on six test problems that this algorithm is nearly as effective as an active learning oracle that knows the optimal model in advance."
+48,Sketch Recognition with Natural Correction and Editing,"Jie Wu, Changhu Wang, Liqing Zhang and Yong Rui","AI and the Web (AIW)
+Humans and AI (HAI)
+Machine Learning Applications (MLA)
+Vision (VIS)","Sketch Recognition
+Symbol Recognition
+User Interface
+Correction and Editing
+Shape Knowledge","AIW: Intelligent user interfaces for web systems
+HAI: Human-Computer Interaction
+HAI: Interaction Techniques and Devices
+MLA: Applications of Supervised Learning
+NMLA: Data Mining and Knowledge Discovery
+VIS: Object Recognition","In this paper, we target at the problem of sketch recognition. We systematically study how to incorporate users' natural correction and editing into isolated and full sketch recognition. This is a natural and necessary interaction in real systems such as Visio where extremely similar shapes exist. First, a novel algorithm is proposed to mine the prior shape knowledge for three editing modes. Second, to differentiate visually similar shapes, a novel symbol recognition algorithm is introduced by leveraging the learnt shape knowledge. Then, a novel correction/editing detection algorithm is proposed to facilitate symbol recognition. Furthermore, both of the symbol recognizer and the correction/editing detector are systematically incorporated into the full sketch recognition. Finally, based on the proposed algorithms, a real-time sketch recognition system is built to recognize hand-drawn flowchart/diagram with flexible interactions. Extensive experiments on benchmark datasets show the effectiveness of the proposed algorithms."
