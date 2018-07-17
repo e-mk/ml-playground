@@ -53,6 +53,7 @@ abstract = full_data['abstract'].values
 
 ''' dendogram '''
 #dend = dendrogram(linkage(data, method = 'ward')) 
+dend = dendrogram(linkage(data, metric=metric_dist)) 
 
 allwords = all_words(abstract)
 fclust1 = fclusterdata(data, 0.9, criterion='distance', metric = metric_dist)
