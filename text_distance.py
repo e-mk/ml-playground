@@ -39,7 +39,7 @@ def sentence_dist(p1, p2):
     vdot_p1p2 = np.vdot(list(p1_map.values()), list(p2_map.values()))
     dist = vdot_p1p2/((vdot_p1*vdot_p2)**0.5)
     result = np.arccos(dist)
-    print(result)
+    #print(result)
     return result
 
      
@@ -55,8 +55,10 @@ abstract = full_data['abstract'].values
 #dend = dendrogram(linkage(data, method = 'ward')) 
 dend = dendrogram(linkage(data, metric=metric_dist)) 
 
+#clustering = ag_clustering(affinity=metric_dist, linkage='complete')
+
 allwords = all_words(abstract)
-fclust1 = fclusterdata(data, 0.9, criterion='distance', metric = metric_dist)
+fclust1 = fclusterdata(data, 0.8, criterion='distance', metric = metric_dist)
 #fclust2 = fclusterdata(X, 50, criterion='distance', metric='euclidean')
 
 print(fclust1)
