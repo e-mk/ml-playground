@@ -52,22 +52,24 @@ full_data = pd.read_csv('res/Papers_dev100.csv')
 data = full_data[['index']].values
 abstract = full_data['abstract'].values
 
-''' dendogram '''
-#dend = dendrogram(linkage(data, method = 'ward')) 
-dend = dendrogram(linkage(data, metric=metric_dist)) 
-
-#clustering = ag_clustering(affinity=metric_dist, linkage='complete')
-
 allwords = all_words(abstract)
 dist_dict = {}
 
-for i in range(3):
-    t = 0.74 + i * 0.2
+''' dendogram '''
+#dend = dendrogram(linkage(data, method = 'ward')) 
+dend = dendrogram(linkage(data, metric=metric_dist))
+
+#clustering = ag_clustering(affinity=metric_dist, linkage='complete')
+
+for i in range(3):    
+    t = 0.74 + i * 0.03
     fclust1 = fclusterdata(data, t, criterion='distance', metric = metric_dist)
     
     unique, counts = np.unique(fclust1, return_counts=True)
     dict(zip(unique, counts))
     print(dict(zip(unique, counts)))
+
+metric_dist([4], [5])
 
    
 sentence1 = 'We propose a voted dual averaging method for online classification problems with classification regularization.'
